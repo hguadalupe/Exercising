@@ -1,0 +1,493 @@
+#DATA PREEXPLORATION
+
+##Dimension:
+31 Variables
+7043 Rows
+
+##Variables:
+Customer ID,Gender,Age,Married,Number of Dependents,City,Zip Code,Latitude,Longitude,Number of Referrals,Tenure in Months,Offer,Phone Service,Avg Monthly Long Distance Charges,Multiple Lines,Internet Service,Internet Type,Avg Monthly GB Download,Online Security,Online Backup,Device Protection Plan,Premium Tech Support,Streaming TV,Streaming Movies,Streaming Music,Unlimited Data,Contract,Paperless Billing,Payment Method,Monthly Charge,Total Charges,Total Refunds,Total Extra Data Charges,Total Long Distance Charges,Total Revenue,Customer Status,Churn Category,Churn Reason.
+
+##Basic stats:
+
+1. "Customer ID"
+
+	Type of data:          Text
+	Contains null values:  False
+	Unique values:         7043
+	Longest value:         10 characters
+	Most common values:    0002-ORFBO (1x)
+	                       0003-MKNFE (1x)
+	                       0004-TLHLJ (1x)
+	                       0011-IGKFF (1x)
+	                       0013-EXCHZ (1x)
+
+  2. "Gender"
+
+	Type of data:          Text
+	Contains null values:  False
+	Unique values:         2
+	Longest value:         6 characters
+	Most common values:    Male (3555x)
+	                       Female (3488x)
+
+  3. "Age"
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         62
+	Smallest value:        19
+	Largest value:         80
+	Sum:                   327,568
+	Mean:                  46.51
+	Median:                46
+	StDev:                 16.75
+	Most common values:    42 (156x)
+	                       47 (153x)
+	                       40 (150x)
+	                       44 (148x)
+	                       23 (146x)
+
+  4. "Married"
+
+	Type of data:          Boolean
+	Contains null values:  False
+	Unique values:         2
+	Most common values:    False (3641x)
+	                       True (3402x)
+
+  5. "Number of Dependents"
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         10
+	Smallest value:        0
+	Largest value:         9
+	Sum:                   3,301
+	Mean:                  0.469
+	Median:                0
+	StDev:                 0.963
+	Most common values:    0 (5416x)
+	                       1 (553x)
+	                       2 (531x)
+	                       3 (517x)
+	                       5 (10x)
+
+  6. "City"
+
+	Type of data:          Text
+	Contains null values:  False
+	Unique values:         1106
+	Longest value:         22 characters
+	Most common values:    Los Angeles (293x)
+	                       San Diego (285x)
+	                       San Jose (112x)
+	                       Sacramento (108x)
+	                       San Francisco (104x)
+
+  7. "Zip Code"
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         1626
+	Smallest value:        90,001
+	Largest value:         96,150
+	Sum:                   658,422,395
+	Mean:                  93,486.071
+	Median:                93,518
+	StDev:                 1,856.768
+	Most common values:    92,028 (43x)
+	                       92,027 (38x)
+	                       92,122 (36x)
+	                       92,117 (34x)
+	                       92,126 (32x)
+
+  8. "Latitude"
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         1626
+	Smallest value:        32.556
+	Largest value:         41.962
+	Sum:                   254,938.674
+	Mean:                  36.197
+	Median:                36.205
+	StDev:                 2.469
+	Most common values:    33.363 (43x)
+	                       33.141 (38x)
+	                       32.857 (36x)
+	                       32.825 (34x)
+	                       32.887 (32x)
+
+  9. "Longitude"
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         1625
+	Smallest value:        -124.301
+	Largest value:         -114.193
+	Sum:                   -843,446.323
+	Mean:                  -119.757
+	Median:                -119.595
+	StDev:                 2.154
+	Most common values:    -117.3 (43x)
+	                       -116.967 (38x)
+	                       -117.21 (36x)
+	                       -117.199 (34x)
+	                       -117.152 (32x)
+
+ 10. "Number of Referrals"
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         12
+	Smallest value:        0
+	Largest value:         11
+	Sum:                   13,747
+	Mean:                  1.952
+	Median:                0
+	StDev:                 3.001
+	Most common values:    0 (3821x)
+	                       1 (1086x)
+	                       5 (264x)
+	                       3 (255x)
+	                       7 (248x)
+
+ 11. "Tenure in Months"
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         72
+	Smallest value:        1
+	Largest value:         72
+	Sum:                   228,100
+	Mean:                  32.387
+	Median:                29
+	StDev:                 24.542
+	Most common values:    1 (613x)
+	                       72 (362x)
+	                       2 (238x)
+	                       3 (200x)
+	                       4 (176x)
+
+ 12. "Offer"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Unique values:         6
+	Longest value:         7 characters
+	Most common values:    None (3877x)
+	                       Offer B (824x)
+	                       Offer E (805x)
+	                       Offer D (602x)
+	                       Offer A (520x)
+
+ 13. "Phone Service"
+
+	Type of data:          Boolean
+	Contains null values:  False
+	Unique values:         2
+	Most common values:    True (6361x)
+	                       False (682x)
+
+ 14. "Avg Monthly Long Distance Charges"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Unique values:         3584
+	Smallest value:        1.01
+	Largest value:         49.99
+	Sum:                   161,699.91
+	Mean:                  25.421
+	Median:                25.69
+	StDev:                 14.2
+	Most common values:    None (682x)
+	                       18.26 (7x)
+	                       45.92 (6x)
+	                       10.11 (6x)
+	                       27.97 (6x)
+
+ 15. "Multiple Lines"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Unique values:         3
+	Most common values:    False (3390x)
+	                       True (2971x)
+	                       None (682x)
+
+ 16. "Internet Service"
+
+	Type of data:          Boolean
+	Contains null values:  False
+	Unique values:         2
+	Most common values:    True (5517x)
+	                       False (1526x)
+
+ 17. "Internet Type"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Unique values:         4
+	Longest value:         11 characters
+	Most common values:    Fiber Optic (3035x)
+	                       DSL (1652x)
+	                       None (1526x)
+	                       Cable (830x)
+
+ 18. "Avg Monthly GB Download"
+
+	Type of data:          Number
+	Contains null values:  True (excluded from calculations)
+	Unique values:         50
+	Smallest value:        2
+	Largest value:         85
+	Sum:                   144,490
+	Mean:                  26.19
+	Median:                21
+	StDev:                 19.587
+	Most common values:    None (1526x)
+	                       19 (220x)
+	                       27 (199x)
+	                       30 (193x)
+	                       59 (192x)
+
+ 19. "Online Security"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Unique values:         3
+	Most common values:    False (3498x)
+	                       True (2019x)
+	                       None (1526x)
+
+ 20. "Online Backup"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Unique values:         3
+	Most common values:    False (3088x)
+	                       True (2429x)
+	                       None (1526x)
+
+ 21. "Device Protection Plan"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Unique values:         3
+	Most common values:    False (3095x)
+	                       True (2422x)
+	                       None (1526x)
+
+ 22. "Premium Tech Support"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Unique values:         3
+	Most common values:    False (3473x)
+	                       True (2044x)
+	                       None (1526x)
+
+ 23. "Streaming TV"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Unique values:         3
+	Most common values:    False (2810x)
+	                       True (2707x)
+	                       None (1526x)
+
+ 24. "Streaming Movies"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Unique values:         3
+	Most common values:    False (2785x)
+	                       True (2732x)
+	                       None (1526x)
+
+ 25. "Streaming Music"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Unique values:         3
+	Most common values:    False (3029x)
+	                       True (2488x)
+	                       None (1526x)
+
+ 26. "Unlimited Data"
+
+	Type of data:          Boolean
+	Contains null values:  True (excluded from calculations)
+	Unique values:         3
+	Most common values:    True (4745x)
+	                       None (1526x)
+	                       False (772x)
+
+ 27. "Contract"
+
+	Type of data:          Text
+	Contains null values:  False
+	Unique values:         3
+	Longest value:         14 characters
+	Most common values:    Month-to-Month (3610x)
+	                       Two Year (1883x)
+	                       One Year (1550x)
+
+ 28. "Paperless Billing"
+
+	Type of data:          Boolean
+	Contains null values:  False
+	Unique values:         2
+	Most common values:    True (4171x)
+	                       False (2872x)
+
+ 29. "Payment Method"
+
+	Type of data:          Text
+	Contains null values:  False
+	Unique values:         3
+	Longest value:         15 characters
+	Most common values:    Bank Withdrawal (3909x)
+	                       Credit Card (2749x)
+	                       Mailed Check (385x)
+
+ 30. "Monthly Charge"
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         1591
+	Smallest value:        -10
+	Largest value:         118.75
+	Sum:                   447,907.55
+	Mean:                  63.596
+	Median:                70.05
+	StDev:                 31.205
+	Most common values:    20.05 (60x)
+	                       19.85 (45x)
+	                       19.95 (44x)
+	                       19.9 (44x)
+	                       20 (43x)
+
+ 31. "Total Charges"
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         6540
+	Smallest value:        18.8
+	Largest value:         8,684.8
+	Sum:                   16,060,725.24
+	Mean:                  2,280.381
+	Median:                1,394.55
+	StDev:                 2,266.22
+	Most common values:    20.2 (11x)
+	                       19.75 (9x)
+	                       19.65 (8x)
+	                       20.05 (8x)
+	                       19.9 (8x)
+
+ 32. "Total Refunds"
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         500
+	Smallest value:        0
+	Largest value:         49.79
+	Sum:                   13,819.65
+	Mean:                  1.962
+	Median:                0
+	StDev:                 7.903
+	Most common values:    0 (6518x)
+	                       44.9 (2x)
+	                       9.73 (2x)
+	                       16.56 (2x)
+	                       8.74 (2x)
+
+ 33. "Total Extra Data Charges"
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         16
+	Smallest value:        0
+	Largest value:         150
+	Sum:                   48,320
+	Mean:                  6.861
+	Median:                0
+	StDev:                 25.105
+	Most common values:    0 (6315x)
+	                       10 (138x)
+	                       40 (62x)
+	                       30 (58x)
+	                       20 (51x)
+
+ 34. "Total Long Distance Charges"
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         6068
+	Smallest value:        0
+	Largest value:         3,564.72
+	Sum:                   5,275,906.1
+	Mean:                  749.099
+	Median:                401.44
+	StDev:                 846.66
+	Most common values:    0 (682x)
+	                       15.6 (4x)
+	                       48.96 (4x)
+	                       22.86 (4x)
+	                       200.34 (3x)
+
+ 35. "Total Revenue"
+
+	Type of data:          Number
+	Contains null values:  False
+	Unique values:         6975
+	Smallest value:        21.36
+	Largest value:         11,979.34
+	Sum:                   21,371,131.69
+	Mean:                  3,034.379
+	Median:                2,108.64
+	StDev:                 2,865.205
+	Most common values:    66.56 (3x)
+	                       116.27 (3x)
+	                       24.8 (3x)
+	                       68.41 (3x)
+	                       444.75 (2x)
+
+ 36. "Customer Status"
+
+	Type of data:          Text
+	Contains null values:  False
+	Unique values:         3
+	Longest value:         7 characters
+	Most common values:    Stayed (4720x)
+	                       Churned (1869x)
+	                       Joined (454x)
+
+ 37. "Churn Category"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Unique values:         6
+	Longest value:         15 characters
+	Most common values:    None (5174x)
+	                       Competitor (841x)
+	                       Dissatisfaction (321x)
+	                       Attitude (314x)
+	                       Price (211x)
+
+ 38. "Churn Reason"
+
+	Type of data:          Text
+	Contains null values:  True (excluded from calculations)
+	Unique values:         21
+	Longest value:         41 characters
+	Most common values:    None (5174x)
+	                       Competitor had better devices (313x)
+	                       Competitor made better offer (311x)
+	                       Attitude of support person (220x)
+	                       Don't know (130x)
+
+
+
+
+
